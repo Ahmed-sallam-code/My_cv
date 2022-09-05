@@ -1,0 +1,296 @@
+.top-container{
+  color: #5F6F94;
+  position: relative;
+  padding-top: 50px;
+  margin-top: 0px;
+}
+body{
+    margin: 0px;
+    text-align: center;
+    font-family: Mochiy Pop One;
+    background-color: #97D2EC;
+    margin-top: 50px;
+    
+}
+h1{
+    margin-top: 0px;
+}
+.middle-container{
+    margin-top: 550px;
+    background-color: #FFF4CF;
+    padding-bottom: 40px;
+    padding-top: 40px;
+
+}
+.bottom-container{
+    background-color: #FFCB42;
+    width:65%;
+    margin: 0px auto 0 auto;
+    padding: 240px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.top-cloud{
+    position: absolute;
+    top:1px;
+    left: 70%;
+    z-index: -4;
+    animation-name: top-cloud;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.bottom-cloud{
+    position: absolute;
+    top: 320px;
+    right: 70%;
+    z-index: -4;
+    animation-name: bottom-cloud;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes top-cloud {
+    from{
+        position: absolute;
+        top:0px;
+        left: 70%;
+        z-index: -4;
+    }
+    to{
+        position: absolute;
+        top:0px;
+        left: 60%;
+        z-index: -4;
+    }
+}
+@keyframes bottom-cloud {
+    from{
+        position: absolute;
+        top: 150px;
+        right: 70%;
+        z-index: -4;
+    }
+    to{
+        position: absolute;
+       top: 150px;
+        right: 60%;
+        z-index: -4;
+    }
+}
+.antena{
+    height: 80px;
+    width: auto;
+}
+.antena2{
+    height: 600px;
+    width: auto;
+    position: absolute;
+    top:150px;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    z-index: -5;
+}
+.signal{
+    border: solid 15px #54BAB9;
+    border-top: 0px;
+    border-bottom: 0px;
+    height:200px ;
+    width: 300px;
+    border-radius: 200px;
+    animation-name: signal;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 300px;
+}
+@keyframes signal {
+    from{
+        height:50px ;
+        width: 65px;
+        border-radius: 200px;
+        opacity: 100%;
+        top: 300px;
+        border-color: #54BAB9 ;
+    }
+    to{
+        height:400px ;
+        width: 500px;
+        border-radius: 400px;
+        opacity: 0%;
+        top: 125px;
+        border-color: #F07DEA;
+    }
+}
+.signalsh{
+    border: solid 15px #54BAB9;
+    border-top: 0px;
+    border-bottom: 0px;
+    height:200px ;
+    width: 300px;
+    border-radius: 200px;
+    animation-name: signal;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 300px;
+    animation-delay: 200ms;
+}
+.signalant{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #D61C4E;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 300px;
+    animation-name: signalant;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes signalant {
+    from{background-color: #D61C4E;}
+    to{background-color: #1CD6CE;}
+}
+.tower{
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 400px solid #16213E;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 350px;
+}
+h1{
+    font-family: 'Leckerli One', cursive;
+    text-shadow: 2px 2px #F07DEA;
+    font-size: 5rem;
+    margin-bottom: 2px;
+}
+h2{
+    font-family: Mochiy Pop One;
+    text-shadow: 2px 2px #BFACE0;
+    font-size: 2.5rem;
+    color: #FBDF07;
+    font-weight: normal;
+}
+h3{
+    font-family: Mochiy Pop One;
+    text-shadow: 2px 2px #EBC7E8;
+    color: #0F3460;
+    font-size: 1.5rem;
+}
+.prof-pic{
+    height:300px;
+    width: auto;
+    border-radius: 400px;
+}
+.wryy{
+    margin-top: 5px;
+}
+a{
+    color:  #11999E;
+}
+.skill-row{
+    width: 70%;
+    height: auto;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+    background-color: #FEDB39;
+    padding: 20px;
+    box-shadow: 20px 20px 20px #16213E;
+}
+.skill-row:hover{
+    animation-name: skills;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+@keyframes skills {
+    from{
+        box-shadow: 20px 20px 20px #16213E;
+    }
+    to{
+        box-shadow: 20px 20px 40px #16213E;
+    }
+}
+.skill{
+    width: 30%;
+    height: auto;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+.skill2{
+    width: 25%;
+    height: auto;
+    float: right;
+    margin-left: 30px;
+}
+.skill3{
+    width: 25%;
+    height: auto;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.intro{
+    width: 50%;
+    margin: 50px auto 50px auto;
+}
+hr{
+    border: dotted 6px#232525;
+    width: 5%;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+}
+.footer-link{
+    margin:20px 20px 40px 20px;
+    text-decoration: none;
+}
+.btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #022e4b, #2980b9);
+    background-image: -moz-linear-gradient(top, #022e4b, #2980b9);
+    background-image: -ms-linear-gradient(top, #022e4b, #2980b9);
+    background-image: -o-linear-gradient(top, #022e4b, #2980b9);
+    background-image: linear-gradient(to bottom, #022e4b, #2980b9);
+    border-radius: 28px;
+    box-shadow: 5px 5px 7px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #022e4b, #3498db);
+    background-image: -moz-linear-gradient(top, #022e4b, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+  .contact-me{
+    line-height: 3;
+  }
+
