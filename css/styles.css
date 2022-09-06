@@ -213,7 +213,38 @@ a{
     background-color: #FEDB39;
     padding: 20px;
     box-shadow: 20px 20px 20px #16213E;
+    animation-name: skill-row;
+    animation-timing-function: ease-out;
+    animation-duration: 800ms;
+    animation-iteration-count: 1;
 }
+.bio{
+    width: 70%;
+    height: auto;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+    background-color: #FEDB39;
+    padding: 20px;
+    box-shadow: 20px 20px 20px #16213E;
+    animation-name: skill-row;
+    animation-timing-function: ease-out;
+    animation-duration: 800ms;
+    animation-iteration-count: 1;
+}
+.bio:hover{
+    animation-name: skills;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+/*@keyframes skill-row {
+    from{transform: translate(-100px);
+    background-color: #54BAB9;}
+    to{transform: translate(0);
+        background-color: #FEDB39;}
+}*/
 .skill-row:hover{
     animation-name: skills;
     animation-duration: 500ms;
@@ -293,4 +324,71 @@ hr{
   .contact-me{
     line-height: 3;
   }
+  .loading-points{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(47, 54, 54);
+    position: absolute;
+    top: 50%;
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.loading-points2{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(47, 54, 54);
+    position: absolute;
+    top: 50%;
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0.6667s;
+    opacity: 0%;
+}
+.loading-points3{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(47, 54, 54);
+    position: absolute;
+    top: 50%;
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1.33334s;
+    opacity: 0%;
+}
+@keyframes loading {
+    0%{
+        transform: translate(0,-50%);
+        left: 0%;
+        opacity: 0%;
+    }
+    20%{
+        transform: translate(40%,-50%);
+        left: 40%;
+        opacity: 100%;
+    }
+    80%{
+        transform: translate(60%,-50%);
+        left: 60%;opacity: 100%;
+    }
+    100%{
+        transform: translate(100%,-50%);
+        left: 100%;
+        opacity: 0%;
+    }
+}
+.container{
+    position: relative;
+    height: 100px;
+    width:800px;
+    margin: 0 auto 0 auto;
+}
 
